@@ -108,6 +108,3 @@ Large screen:
 
 Small screen:
 ![nav menu small screen](Images/nav-sm.png)
-# web-Visualization-Dashboard-Latitude-
-# Latitude_Dashboard
-# Latitude_Dashboard

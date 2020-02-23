@@ -1,4 +1,28 @@
-.container-fluid .navbar-brand{
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: d-block;
+  padding: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  cursor: pointer;
+}/* Giving our navbar some padding and a background color */
+.navbar {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 25px;
+  background: #5D6D7E;
+}
+
+.latitude {
+  color: turquoise;
+  font-family: verdana;
+  font-size: 40px;
+  background-color: #2874A6;
+  border: 1px solid #2874A6;
+    padding: 15px;
+}
+
+.container-fluid.navbar-brand{
       color: white;
       height: 60px;
       padding: 20px;
@@ -8,9 +32,7 @@
       background: rgb(31, 214, 196);
 }
 
-.navbar-nav li {
-    display:inline-block;     
-}
+
 
 body{
     background-color:#e4e4e4;
@@ -19,6 +41,11 @@ body{
     font-weight: 300;
     line-height: 2.0;
     text-align: justify;
+}
+
+.col-md-12 h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -54,14 +81,29 @@ p {
     margin-right: 35px;
     align-content: center;
 }
+/* Box Class */
+.box {
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
+    background-color: white; 
 
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 20px;
-    background-color: rgb(83, 83, 81);
+  }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgb(83, 83, 81);
+  color: white;
+  text-align: center;
+  border-top-width: 5px;
+  border-top-color:turquoise;
 }
+
 
 .footer p{
     color: white;
@@ -81,11 +123,6 @@ footer{
     width:90%;
 }
 
-#secondblock {
-    margin-left:25px;
-    width:85%;
-}
-
 .dataframe{
     margin-left: 100px;
 }
@@ -96,18 +133,9 @@ footer{
 }
 
 @media (max-width: 480px) {
+    
     .navbar-nav li {  
       padding: 10px;
     }
-    /* .box {
-      margin-right: 20px;
-      margin-left: 20px;
-    } */
-    /* The nav bar selection remains hidden when screen size reaches 480px */
-    .navbar ul { 
-      visibility: hidden;
-    }
-    /* #nav-select {
-      visibility: visible;
-    } */
-  }
+  
+    
