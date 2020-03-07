@@ -10,11 +10,11 @@
   margin-right: 0px;
   margin-left: 0px;
   padding: 25px;
-  background: #5D6D7E;
+  background: #C33F84;
 }
 
 .latitude {
-  color: turquoise;
+  color: white;
   font-family: verdana;
   font-size: 40px;
   background-color: #2874A6;
@@ -29,7 +29,13 @@
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-weight: bold;
       font-size: 140%;
-      background: rgb(31, 214, 196);
+      background: #C84B6D;
+}
+.navbar-light .navbar-brand {
+    color: rgb(77, 20, 183);
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(110, 66, 191);
 }
 
 
@@ -59,7 +65,7 @@ body{
 .container h1{
     font-weight: bold;
     font-size: 250%;
-    color: turquoise;
+    color: #604A6E;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 70px;
    padding: 20px;
@@ -71,11 +77,28 @@ p {
     line-height: 1.8;
     margin-bottom: 70px;
 }
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #6d3fbf;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.container h3{
+  font-size: 1.75rem;
+  color: #604A6E;
+}
 
 .container h2{
     font-weight: bold;
     font-size: 125%;
-    color: turquoise;
+    color: #604A6E;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 70px;
     margin-right: 35px;
@@ -90,14 +113,14 @@ p {
     background-color: white; 
 
   }
-
-.footer {
+/* The footer is positioned at the bottom of the page */
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 20px;
-  background-color: rgb(83, 83, 81);
+  background-color: rgb(96, 74, 110);
   color: white;
   text-align: center;
   border-top-width: 5px;
@@ -107,7 +130,7 @@ p {
 
 .footer p{
     color: white;
-}
+  }
 
 #comparison {
     margin-top: 10px;
@@ -130,6 +153,29 @@ p {
 .col-md-12 h2{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+table {
+  overflow: hidden;
+}
+
+tr:hover {
+  background-color:rgb(96, 74, 110);
+}
+
+td, th {
+  position: relative;
+}
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(96, 74, 110);
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
 }
 
 @media (max-width: 480px) {
